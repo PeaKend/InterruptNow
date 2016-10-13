@@ -1,0 +1,9 @@
+## Interface: 70000
+## Title: Interrupt Now!
+## Version: r1
+## Author: Facundo "US-Quel'Thalas-Muertotuerto" Atrio
+## Notes: Interrupt sequence helper for raids and arenas
+## LoadManagers: AddonLoader
+
+InterruptNow.lua
+InterruptNow.xml

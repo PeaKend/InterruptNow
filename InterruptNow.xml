@@ -1,0 +1,99 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+	../UI.xsd">
+	<Frame name="InterruptNow" parent="UIParent" enablemouse="true" frameStrata="MEDIUM">
+		<Size x="100" y="100"/>
+		<Anchors>
+			<Anchor point="TOP">
+				<Offset>
+					<AbsDimension x="0" y="-120"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentBackground" file="Interface\ACHIEVEMENTFRAME\UI-GuildAchievement-AchievementBackground">
+					<Size x="100" y="100"/>
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture name="$parentLEFT" file="Interface\ACHIEVEMENTFRAME\UI-Achievement-MetalBorder-Left">
+					<Size x="10" y="110"/>
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="0" y="-6"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentRIGHT" file="Interface\ACHIEVEMENTFRAME\UI-Achievement-MetalBorder-Left">
+					<Size x="10" y="110"/>
+					<Anchors>
+						<Anchor point="RIGHT">
+							<Offset>
+								<AbsDimension x="5" y="-6"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentTOP" file="Interface\ACHIEVEMENTFRAME\UI-Achievement-MetalBorder-Top">
+					<Size x="100" y="10"/>
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset>
+								<AbsDimension x="5" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentBOTTOM" file="Interface\ACHIEVEMENTFRAME\UI-Achievement-MetalBorder-Top">
+					<Size x="100" y="10"/>
+					<Anchors>
+						<Anchor point="BOTTOM">
+							<Offset>
+								<AbsDimension x="5" y="-5"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture name="$parentTOPLEFT" file="Interface\CHARACTERFRAME\TemporaryPortrait-Male-Scourge">
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+					<Size>
+						<AbsDimension x="15" y="15"/>
+					</Size>
+				</Texture>
+				<Texture name="$parentTOPRIGHT" file="Interface\CHARACTERFRAME\TemporaryPortrait-Male-Scourge">
+					<Anchors>
+						<Anchor point="TOPRIGHT"/>
+					</Anchors>
+					<Size>
+						<AbsDimension x="15" y="15"/>
+					</Size>
+				</Texture>
+				<Texture name="$parentBOTTOMLEFT" file="Interface\CHARACTERFRAME\TemporaryPortrait-Male-Scourge">
+					<Anchors>
+						<Anchor point="BOTTOMLEFT"/>
+					</Anchors>
+					<Size>
+						<AbsDimension x="15" y="15"/>
+					</Size>
+				</Texture>
+				<Texture name="$parentBOTTOMRIGHT" file="Interface\CHARACTERFRAME\TemporaryPortrait-Male-Scourge">
+					<Anchors>
+						<Anchor point="BOTTOMRIGHT"/>
+					</Anchors>
+					<Size>
+						<AbsDimension x="15" y="15"/>
+					</Size>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad function="InterruptNow_OnLoad"/>
+		</Scripts>
+	</Frame>
+</Ui>
